@@ -1,0 +1,348 @@
+
+@import url(root.css);*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: aliceblue;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: var(--accent);
+    top: 0;
+}
+section{
+    /* padding: 60px 0; */
+}
+.nav div{
+    display: flex;
+    gap: 50px;
+}
+.nav h1{
+    font-size: 20px;
+}
+.anchor a{
+    text-decoration: none;
+}
+
+
+/* HOME SECTION CSS PROPERTIES */
+
+
+.home{
+    /* height: calc(100vh - 50px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.home div{
+    /* height: 70%; */
+    /* width: 50%; */
+    /* margin: 0 120px; */
+    padding: 50px;
+}
+#intro{
+    text-align: left;
+}
+#intro h2{
+    font-size: 35px;
+    font-style: bold;
+    color: rgb(118, 156, 213);
+}
+#intro p{
+    font-size: 20px;
+}
+#intro button{
+    margin: 50px;
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--accent);
+}
+#intro button:hover{
+    transform: scale(1.15);
+}
+#intro button a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#profile img{
+    height: 320px;
+    width: 320px;
+    /* width: 100%; */
+    border-radius: 50%;
+}
+
+
+/* ABOUT SECTION CSS PROPERTIES */
+
+
+.about{
+    height: 100vh;
+    width: 100%;
+}
+
+.about div{
+   display: flex;
+   /* align-items: center; */
+   /* justify-content: center; */
+   /* gap: 50px; */
+   padding: 70px;
+}
+#about1{
+    
+    /* width: 50%; */
+    height: 600px;
+}
+#about2{
+    /* width: 50%; */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+#about2 h1{
+    text-align: left;
+    font-size: 35px;
+}
+#about2 p{
+    
+    font-size: 30px;
+    font-style: oblique;
+}
+
+
+/* SKILL SECTION CSS PROPERTIES */
+
+
+.skill{
+    height: 100vh;
+}
+.skillchild{
+    display: block;
+}
+.skill1{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: left;
+    padding: 50px;
+    margin: 30px 50px;
+}
+.skill2{
+    margin: 50px;
+    overflow: hidden;
+}
+.move{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+.move div{
+    width: 250px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+.move div img{
+    width: 100%;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+.move div:hover{
+    transform: scale(1.15);
+    z-index: 10;
+}
+.skill2:hover .move{
+    animation-play-state: paused;
+}
+
+
+/* PROJECTS SECTION CSS PROPERTIES */
+
+
+.project{
+    /* height: 120vh; */
+}
+.heading{
+    text-align: center;
+    font-size: 45px;
+}
+.projectchild{
+    /* margin: 30px 50px; */
+    /* display: grid;
+    grid-template-areas:"p1 p2" "p3 p4"; */
+    display: flex;
+    justify-content: center;
+}
+.box0{
+    /* width: 600px; */
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(100, 100, 155);
+}
+.box0 h1{
+    text-align: center;
+}
+.box0 img{
+    width: 550px;
+    height: 270px;
+    padding: 10px;
+    
+}
+.box0 a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.box1{
+    grid-area: p1;
+}
+.box2{
+    grid-area: p2 ;
+}
+.box3{
+    grid-area: p3 ;
+}
+.box4{
+    grid-area: p4 ;
+}
+
+
+/* CONTACT SECTION CSS PROPERTIES */
+
+
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.msg{
+    height: 25%;
+    padding: 50px;
+    /* background-color: aqua; */
+}
+.msg h1{
+    text-align: center;
+}
+.msg p{
+    text-align: center;
+}
+.type{
+    height: 55%;
+    /* background-color: blueviolet; */
+    padding: 50px;
+    display: grid;
+    grid-template-areas: "t1 t4" 
+                         "t2 t4" 
+                         "t3 t5";
+     gap: 20px;
+     justify-content: center;
+}
+.input{
+    width: 300px;
+    height: 50px;
+}
+.input1{
+    grid-area: t1;
+    /* background-color: chartreuse; */
+}
+.input2{
+    grid-area: t2;
+    /* background-color: cornflowerblue; */
+}
+.input3{
+    grid-area: t3;
+    /* background-color: coral; */
+}
+.input4{
+    grid-area: t4;
+    height: 200px;
+    margin-bottom: 10px;
+    resize: none;
+    /* background-color: cyan; */
+}
+.con-btn{
+    width: 300px;
+    height: 50px;
+    grid-area: t5;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--accent);
+    font-size: 16px;
+}
+.con-btn:hover{
+    transform: scale(1.1);
+
+}
+.icons{
+    display: flex;
+    gap: 200px;
+    height: 20%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+     /* background-color: chocolate;  */
+     color: var(--text-secondary);
+}
+.icon{
+   font-size: 30px;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* COLOR PALETTE */
+body{
+    background-color: var(--bg-main);
+}
+section{
+    background-color: var(--bg-section);
+}
+h1 {
+    color: var(--text-primary);
+}
+h2 {
+   color: var(--text-secondary); 
+}
+p{
+    color: var(--text-secondary);
+}
+a{
+    color: var(--text-primary);
+}
+button{
+    color: white;
+}
+@media (max-width:1310px) {
+    section{
+        background-color: initial;
+    }
+    body{
+        background-color: var(--bg-section);
+    }
+}

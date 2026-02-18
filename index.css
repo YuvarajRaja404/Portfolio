@@ -1,0 +1,123 @@
+/* body{
+    background-color: grey;
+}
+section{
+    background-color: white;
+} */
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+}
+.nav-list{
+    font-size: 16px;
+}
+#Home div{
+    justify-content: space-between;
+    overflow: hidden;
+}
+@media (max-width: 320px) {
+    #ab-btn{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 69%
+    }
+}
+#About{
+    overflow: hidden;
+}
+#home-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+}
+#about-img{
+    width: 250px;
+    height: 360px;
+}
+#Skill{
+    overflow: hidden;
+}
+.move{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+.move div img{
+    width: 100%;
+}
+.move div{
+    width: 250px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+.project-heading{
+    text-align: center;
+}
+.projectchild{
+
+}
+.box0{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.box0 img{
+    width: 270px;
+}
+#exampleFormControlTextarea1{
+    resize: none;
+}
+.form{
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+   font-size: 25px;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+.msg h1{
+    text-align: center;
+}
+.msg p{
+    text-align: center;
+}
+/* COLOR PALETTE */
+/* body{
+    background-color: var(--bg-main);
+}
+section{
+    background-color: var(--bg-section);
+}
+h1 {
+    color: var(--text-primary);
+}
+h2 {
+   color: var(--text-secondary); 
+}
+p{
+    color: var(--text-secondary);
+}
+a{
+    color: var(--text-primary);
+}
+button{
+    color: white;
+} */
