@@ -49,11 +49,19 @@ section{
 .move div img{
     width: 100%;
 }
+.move div:hover{
+    transform: scale(1.15);
+    z-index: 10;
+}
+.skill2:hover .move{
+    animation-play-state: paused;
+}
 .move div{
     width: 250px;
     flex-shrink: 0;
     transition: transform 0.3s ease;
 }
+
 @keyframes scroll {
     from{
         transform: translateX(0);
@@ -64,9 +72,6 @@ section{
 }
 .project-heading{
     text-align: center;
-}
-.projectchild{
-
 }
 .box0{
     /* border: 1px solid black; */
