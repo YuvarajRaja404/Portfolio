@@ -29,8 +29,8 @@ section{
 }
 #home-img{
     width: 250px;
-    height: 250px;
-    border-radius: 60%;
+    height: px;
+    border-radius: 3%;
 }
 #about-img{
     width: 250px;
@@ -47,14 +47,20 @@ section{
     animation: scroll 30s linear infinite;
 }
 .move div img{
-    width: 100%;
+    width: 75%;
 }
 .move div:hover{
     transform: scale(1.15);
     z-index: 10;
 }
+
 .skill2:hover .move{
     animation-play-state: paused;
+}
+@media (max-width:320px) {
+    .skill2:hover .move{
+    animation-play-state: running;
+}
 }
 .move div{
     width: 250px;
